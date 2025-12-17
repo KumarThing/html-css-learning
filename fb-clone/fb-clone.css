@@ -1,0 +1,48 @@
+body {
+    background-color: rgb(34, 60, 210);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container {
+    text-align: center;
+}
+
+.firstname,
+.lastname {
+    display: inline;
+    margin-top: 20px;
+}
+
+.email {
+    display: block;
+    width: 295px;
+    margin-top: 20px;
+}
+.signup-btn {
+    display: block;
+    margin-top: 20px;
+    width: 305px;
+    cursor: pointer;
+
+    background-color: rgb(33, 122, 218);
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.logo {
+    display: block;
+    width: 90px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+.text {
+    display: block;
+    color: white;
+    margin-top: 15px;
+}
