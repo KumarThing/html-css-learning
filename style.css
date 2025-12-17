@@ -1,0 +1,110 @@
+.youtube-logo {
+width: 100px;
+height: 30px;
+margin-left: auto;
+object-fit: cover;
+
+
+}
+
+.header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.search-box {
+    width: 450px;
+    height: 25px;
+    margin-left: auto;
+    
+}
+
+.search-button {
+    cursor: pointer;
+    padding: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.user-img {
+    
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: auto;
+    
+}
+
+.mic {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    padding: 0.5px;
+
+}
+
+.create {
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.bell {
+    width: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.bell-button {
+    padding: 0.05px;
+}
+
+.profile-button {
+    padding: 0.04px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.home-button {
+    padding-top: 2px;
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-bottom: 1px;
+    cursor: pointer;
+}
+
+.paragraph{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.first-img {
+    width: 250px;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+
+.secound-img {
+    width: 270px;
+    margin-left: 50px;
+    margin-top: 50px;
+    height: 162px;
+}
+
+.third-img {
+    width: 250px;
+    height: 164px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+
+
