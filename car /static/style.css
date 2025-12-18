@@ -1,0 +1,128 @@
+body {
+    text-align: center;
+}
+
+
+.header {
+    display: block;
+}
+
+.main-layout {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+.left-buttons {
+    display: inline-block;
+}
+
+.search {
+    margin-bottom: 20px;
+}
+
+.search-btn {
+    cursor: pointer;
+    border-radius: 3px;
+    border: 2px;
+
+}
+.cars-display {
+    display : inline-block;
+    border: 2px;
+    border-color: black;
+    padding: auto;
+    
+    
+}
+
+.car1 {
+    display: inline-block;
+    margin-right: 30px;
+    vertical-align: top;
+    
+}
+
+.car2 {
+    display: inline-block;
+    margin-right: 30px;
+    vertical-align: top;
+    
+}
+
+.car3 {
+    display: inline-block;
+    margin-right: 30px;
+    vertical-align: top;
+    
+}
+
+.car4,
+.car5,
+.car6,
+.car7,
+.car8,
+.car9,
+.car10 {
+    display: inline-block;
+    margin-right: 30px;
+    vertical-align: top;
+}
+
+.audi_a4 {
+    width: 300px;
+    cursor: pointer;
+   
+}
+
+.bmw_3series {
+    width: 300px;
+    cursor: pointer;
+   
+}
+
+.chevrolet {
+    width: 300px;
+    cursor: pointer;
+   
+}
+
+.ford {
+    width: 300px;
+    cursor: pointer;
+}
+
+.honda {
+    width: 300px;
+    cursor: pointer;
+}
+
+.hyundai {
+    width: 300px;
+    cursor: pointer;
+}
+
+.lexus {
+    width: 300px;
+    cursor: pointer;
+}
+
+.mercedes {
+    width: 300px;
+    cursor: pointer;
+}
+
+.nissan {
+    width: 300px;
+    cursor: pointer;
+}
+
+.toyota {
+    width: 300px;
+    cursor: pointer;
+}
+
+.select {
+    display: block;
+    margin-top: 30px; 
+}
