@@ -1,0 +1,140 @@
+.header {
+    display: flex;
+   align-items: center;
+   justify-content: space-between;
+   height: 60px;
+   padding: 0 16px;
+}
+
+.header-left,
+.header-center,
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.under-header {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    column-gap: 10px;
+}
+
+.video-preview {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.first {
+    background-color: aqua;
+    height: 200px;
+    cursor: pointer;
+}
+
+.secound {
+    background-color: bisque;
+    height: 200px;
+    cursor: pointer;
+}
+
+.third {
+    background-color: blueviolet;
+    height: 200px;
+    cursor: pointer;
+
+}
+
+.forth {
+    background-color: aliceblue;
+    height: 200px;
+    cursor: pointer;
+}
+
+.fifth {
+    background-color: blue;
+    height: 200px;
+    cursor: pointer;
+}
+
+.sixth {
+    background-color: pink;
+    height: 200px;
+    cursor: pointer;
+}
+
+
+
+
+.first:hover,
+.secound:hover,
+.third:hover,
+.forth:hover,
+.fifth:hover,
+.sixth:hover {
+    opacity: 0.5;
+}
+
+.one,
+.two,
+.three,
+.four,
+.five,
+.six{
+    height: 100px;
+    background-color: aqua;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.logo {
+    width: 100px;
+    cursor: pointer;
+    
+}
+
+.search-box {
+    height: 20px;
+    width: 250px;
+    padding: 5px;
+}
+
+.notification {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.create {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  padding: 4px 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+   
+  cursor: pointer;
+  font-weight: 500;
+  font-weight: bold;
+  font-size: 14px;
+
+
+}
+
+.profile {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.notification:hover,
+.create:hover,
+.profile:hover {
+    opacity: 0.5;
+}
