@@ -5,9 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Review web app</title>
-    <link rel="stylesheet" href="/book_review/static/style.css">
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
     <h1>Book Review WebApp</h1>
+
+    <div class="main-body">
+
+        <form action="/submit" method="POST">
+
+            <label>Book Title</label><br>
+            <input type="text" name="title" required><br><br>
+        
+            <label>Author</label><br>
+            <input type="text" name="author" required><br><br>
+        
+            <label>Rating (1–5)</label><br>
+            <input type="number" name="rating" min="1" max="5" required><br><br>
+        
+            <label>Review</label><br>
+            <textarea name="text" rows="5" cols="40" required></textarea><br><br>
+        
+            <button type="submit">Submit Review</button>
+        
+        </form>
+
+       
+
+    </div>
+
+<hr>
+
+<h2>All Reviews</h2>
+
+{{if .}}
+    {{range .}}
+    <h3>Title : {{.Title}}</h3>
+    <p>Author : {{.Author}}</p>
+    <p>Rating: {{.Rating}}</p>
+    <p>Review: {{.Text}}</p>
+
+<hr>
+    {{end}}
+
+{{else}}
+    <p>No bookrs review added.</p>
+{{end}}
+   
 </body>
 </html>

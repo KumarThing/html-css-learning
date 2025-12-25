@@ -1,0 +1,9 @@
+body {
+    text-align: center;
+    background-color: beige;
+}
+
+.input {
+    width: 50%;
+    height: 600px;
+}
