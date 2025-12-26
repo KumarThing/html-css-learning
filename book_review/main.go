@@ -1,6 +1,8 @@
 package main
 
 import (
+	"encoding/json"
+	"os"
 	"fmt"
 	"net/http"
 	"strconv"
@@ -8,6 +10,7 @@ import (
 )
 
 var tmpl = template.Must(template.ParseFiles("template/index.html"))
+const dataFile = "review.json"
 
 
 type Reviews struct{
@@ -21,6 +24,9 @@ var reviews []Reviews
 
 func main() {
 http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("static"))))
+
+
+	loadReviewFromJson()
 
 	http.HandleFunc("/", func(w http.ResponseWriter, r * http.Request) {
 		tmpl.Execute(w, reviews)
@@ -44,6 +50,9 @@ http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("s
 		}
 		reviews = append(reviews, review)
 
+
+		saveReviewToJson()
+
 		
 		
 		tmpl.Execute(w, reviews)
@@ -53,4 +62,33 @@ http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("s
 
 	fmt.Print("Server is running in http://localhost:8080")
 	http.ListenAndServe(":8080", nil)
+}
+
+
+
+func saveReviewToJson() error{
+	file, err := os.Create(dataFile)
+	if err != nil {
+		fmt.Println("Error creating JSON file", err)
+		return err
+	}
+
+	defer file.Close()
+
+	encoder := json.NewEncoder(file)
+	encoder.SetIndent("", "  ")
+
+	return encoder.Encode(reviews)
+}
+
+func loadReviewFromJson() error {
+	file, err := os.Open(dataFile)
+	if err != nil {
+		fmt.Println("error loading json file",err)
+		return nil
+	}
+
+	defer file.Close()
+
+	return json.NewDecoder(file).Decode(&reviews)
 }
